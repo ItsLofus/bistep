@@ -1,7 +1,5 @@
-bistep.js
+## bistep.js
 
-~~~~~~~~~
-~~~~~~~~~
 
 A lightweight library for encrypting strings.
 Uses a simple Bi-Step/Cycle based encryption. Remember to hide your keys appropriately.
@@ -15,13 +13,13 @@ Uses a simple Bi-Step/Cycle based encryption. Remember to hide your keys appropr
 	var DecryptedString = bistep.Decrypt("]R{lzW9pNJ", "AD2h");
 
 ## Change Log
-v1.1.1:
-	Added support for the character ' '
-v1.1:
-	Fixed bug with numbers not being supported
-	Removed support for escape sequences 
-		(Was causing headaches when hardcoding encrypted strings)
-		Left in support for the '\' character
-v1.0:
-    Original Code
+	v1.1.1:
+		Added support for the character ' '
+	v1.1:
+		Fixed bug with numbers not being supported
+		Removed support for escape sequences 
+			(Was causing headaches when hardcoding encrypted strings)
+			Left in support for the '\' character
+	v1.0:
+		Original Code
 	
