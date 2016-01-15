@@ -70,7 +70,7 @@ module.exports = {
 		
 
 		return result;
-	}
+	},
 
 
 	Decrypt: function(data, key)
