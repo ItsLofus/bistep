@@ -29,7 +29,9 @@ Strings are order and case sensitive.
 # FAQ
 ## Q: What characters does bistep accept?
 A: bistep takes the following characters:
-	var acceptableCharacters = "abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890=:;{},.[]*!@#$%^&-_+|~`<>()/\\ ";
+```
+var acceptableCharacters = "abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890=:;{},.[]*!@#$%^&-_+|~`<>()/\\ ";
+```
 These are the only characters you can use in you strings. Also the only characters valid of keys.
 
 ## Q: Decrypt isn't working! I'm getting a string that still looks encrypted!
