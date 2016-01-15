@@ -1,0 +1,26 @@
+{
+  "name": "bistep",
+  "version": "1.1.1",
+  "description": "Lightweight Bistep/Cycle based encryption for strings.",
+  "main": "bistep.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsLofus/bistep.git"
+  },
+  "keywords": [
+    "\\encryption",
+	"\\bistep",
+	"\\cycle",
+	"\\string",
+	"\\json"
+  ],
+  "author": "Anselm Teather <aeteather@gmail.com> (http://isthat-him.tumblr.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ItsLofus/bistep/issues"
+  },
+  "homepage": "https://github.com/ItsLofus/bistep#readme"
+}
