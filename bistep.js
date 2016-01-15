@@ -18,15 +18,11 @@ module.exports = {
 	*/
 
 	/*------    START bistep.js -----*/
-	//v1.1
-
-	//These two are order sensitive so if you change them, then re-encrypt your strings
-	var AN_EXAMPLE_KEY = "BBEV";
-	var acceptableCharacters = "abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890=:;{},.[]*!@#$%^&-_+|~`<>()/\\ ";
-
+	//v1.1.1
 
 	Encrypt: function(data, key)
 	{
+		var acceptableCharacters = "abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890=:;{},.[]*!@#$%^&-_+|~`<>()/\\ ";	//Order sensitive so if you change this, then re-encrypt your strings
 		var bitKey = [];
 		
 		for(var i = 0; i <= key.length - 1; i++)
@@ -79,6 +75,7 @@ module.exports = {
 
 	Decrypt: function(data, key)
 	{
+		var acceptableCharacters = "abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890=:;{},.[]*!@#$%^&-_+|~`<>()/\\ ";	//Order sensitive so if you change this, then re-encrypt your strings
 		var bitKey = [];
 		for(var i = 0; i <= key.length - 1; i++)
 		{
