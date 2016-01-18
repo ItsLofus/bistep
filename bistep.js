@@ -6,7 +6,7 @@ module.exports = {
 	/* Becareful about importing these to the client side*/	
 	
 	/*                    Change Log
-	v1.2.0:
+	v1.2:
 		Added FullEncrypt()
 		Added FullDecrypt()
 		
