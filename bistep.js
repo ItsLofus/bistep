@@ -26,24 +26,6 @@ module.exports = {
 	/*------    START bistep.js   -----*/
 	//v1.2.0
 	
-	
-	
-	//The following tend to support characters that aren't in the acceptableCharacters string.
-	//Converts to/from Base64 before/after encryption/decryption
-	FullEncrypt: function(data, key)
-	{
-		var EncodedData = new Buffer(data).toString('base64');
-		return Encrypt(EncodedData,key);
-	},
-	
-	FullDecrypt: function(data, key)
-	{
-		var EncodedData = Decrypt(data, key);
-		return (new Buffer(EncodedData, 'base64').toString('ascii'));
-	},
-	
-	
-
 	Encrypt: function(data, key)
 	{
 		var acceptableCharacters = "abcdefghijklmnopqrstuvwyxzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890=:;{},.[]*!@#$%^&-_+|~`<>()/\\ \"";	//Order sensitive so if you change this, then re-encrypt your strings
@@ -146,6 +128,21 @@ module.exports = {
 		}
 		
 		return result;
+	},
+	
+	//The following tend to support characters that aren't in the acceptableCharacters string.
+	//Converts to/from Base64 before/after encryption/decryption
+	FullEncrypt: function(data, key)
+	{
+		var EncodedData = new Buffer(data).toString('base64');
+		return this.Encrypt(EncodedData,key);
+	},
+	
+	FullDecrypt: function(data, key)
+	{
+		var EncodedData = this.Decrypt(data, key);
+		return (new Buffer(EncodedData, 'base64').toString('ascii'));
 	}
+	
 
 };
